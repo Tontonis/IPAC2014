@@ -14,7 +14,7 @@
 
 \begin{document}
 \title{BEAM COUPLING IMPEDANCE OF THE NEW BEAM SCREEN OF THE LHC INJECTION KICKER MAGNETS}
-\author{H. Day\thanks{hugo.day@hep.manchester.ac.uk}$^{\dagger}$, M.J. Barnes$^{\dagger}$, F. Caspers$^{\dagger}$, E. Métral$^{\dagger}$, B. Salvant$^{\dagger}$ \\
+\author{H. Day\thanks{hugo.day@hep.manchester.ac.uk}$^{\dagger}$, M.J. Barnes$^{\dagger}$, F. Caspers$^{\dagger}$, E. Métral$^{\dagger}$, B. Salvant$^{\dagger}$, J. Uythoven$^{\dagger}$ \\
 $\dagger$ CERN, Switzerland
 }
 
@@ -27,9 +27,33 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 
 \section{Introduction}
 
-\section{New Design}
+During the 2011 and 2012 runs of the LHC, high temperatures were observed in several devices in the LHC  \cite{metral_cham2012}, a critical piece being the LHC injection kicker magnets (MKIs) Fig.~\ref{fig:mkiStruct}, which were attributed to beam-induced heating due to high power loss from the interaction of the circulating beam with the longitudinal beam coupling impedance. This heating was observed to raise the temperature of the ferrite yoke of one of the MKIs above its Curie point during fills, thereby necessitating waiting times of several hours for the ferrite to cool before safe injection could be carried out \cite{mki-heating}. A magnet with an improved beam screen was inserted during technical stop 3 (TS3) (23/09/12-27/09/12), replacing the MKI8D which was measured to have the highest temperature \cite{mki-heatingTemp}; the replacement magnet was subsequently measured to have the lowest temperature of all magnets.
+
+Building on this success a new design has been proposed to satisfy competing needs of low rates of electrical breakdown during magnet pulsing and a low beam coupling impedance to reduce the power lost into the structure by wakefields; in addition to meeting strict requirements for magnet operation for field rise time and flat top stability \cite{mkiUpgrade}. 
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{MKICrossSectionYZ.pdf}
+\caption{Structure of the injection kicker magnets.}
+\label{fig:mkiStruct}
+\end{figure}
+
+\section{New Beam Screen Design}
+
+The new design involves a redesign of the capacitively coupled end of the beam screen, intended to reduce the electrical field due to the induced potentials on the screen conductors during magnet pulsing. This reduced electric field reduces the possibility of surface breakdown on the internal face of the beam screen allowing additional beam screens to be inserted where previously they had been removed due to being located in regions of high electric field Fig.~\ref{fig:beamScreenCross} providing complete screening of the ferrite yoke of the magnet. See \cite{mki-ElecBreakdown} for more information on behaviour relating to surface flashover. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{beamScreenCrossSectionLabelled.pdf}
+\caption{Cross section of the new beam screen design}
+\label{fig:beamScreenCross}
+\end{center}
+\end{figure}
+
+
 
 \section{Impedance Measurements}
+
+In order to observe the effect of manufacutring tolerences between magnets and as part of the campaign to characterise the impedance of all devices placed into the LHC each of the MKIs with the new beam screen is 
 
 \section{Power Loss and Future Improvements}
 %Title format - Title; Authors; Affiliation; conference
@@ -60,19 +84,12 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 
 \section{INTRODUCTION}
 
-During the 2011 and 2012 runs of the LHC, high temperatures were observed in several devices in the LHC  \cite{metral_cham2012}, a critical piece being the LHC injection kicker magnets (MKIs, Fig.~\ref{fig:mkiStruct}), which were attributed to beam-induced heating due to high power loss from the interaction of the circulating beam with the longitudinal beam coupling impedance. This heating was observed to raise the temperature of the ferrite yoke of one of the MKIs above its Curie point during fills, thereby necessitating waiting times of several hours for the ferrite to cool before safe injection could be carried out \cite{mki-heating}. 
-
-In response to this an extensive study to reduce the temperature of the ferrite yoke was carried out, aimed at reducing the power loss into the kicker magnet and increasing the transfer of thermal energy from the ferrite yoke to the surroundings \cite{mki-heatingTemp}. A new beam screen was implemented in MKI8D in technical stop 3 (TS3) (23/09/12-27/09/12) with improved screening of the ferrite from the beam and some modifications to reduce the likelihood of electrical breakdown during magnet pulsing: this was observed to greatly reduce the temperature of the ferrite yoke \cite{mki-heatingTemp}. Building on this success, further modifications to the beam screen have been proposed to further reduce the beam coupling impedance. In addition, the reasons for the resulting impedance in a well screened magnet (i.e. where the beam does not see the ferrite yoke) are discussed. 
-
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{MKICrossSectionYZ.pdf}
-\caption{Structure of the injection kicker magnets.}
-\label{fig:mkiStruct}
-\end{figure}
-
-
 
 \begin{thebibliography}{9}
+
+\bibitem{mkiUpgrade}
+M.J. Barnes \emph{et al}., \emph{Upgrade of the LHC Injection Kicker Magnets}, IPAC'13, Shanghai, China, MOPWA030
+
 \bibitem{metral_cham2012}
 E. Métral \emph{et al}., \emph{Beam-Induced Heating/Bunch Length/RF and Lessons for 2012}, LHC Performance Workshop, Chamonix 2012, CERN-ATS-2012-069. 
 
@@ -86,7 +103,7 @@ M.J. Barnes \emph{et al}., \emph{"Beam Induced Ferrite Heating of the LHC Inject
 H. Day \emph{et al}., \emph{"Evaluation of the Beam Coupling Impedance of new Beam Screen Designs for the LHC Injection Kicker Magnets"}, IPAC'12, New Orleans, USA, 2012, WEPPR071.
 
 \bibitem{mki-ElecBreakdown}
-M.J. Barnes \emph{et al}., \emph{"Reduction of Surface Flashover of the Beam Screen of the LHC Injection Kickers"}, IPAC'13, Shanghai, China,, MOPWA031.
+M.J. Barnes \emph{et al}., \emph{"Reduction of Surface Flashover of the Beam Screen of the LHC Injection Kickers"}, IPAC'13, Shanghai, China, MOPWA031.
 
 \bibitem{cst-cite}
 \texttt{http://www.cst.com}.
