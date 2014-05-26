@@ -71,9 +71,29 @@ The real component of the longitudinal beam coupling impedance of the 9 MKIs upg
 
 To verify the simulations carried out in the design phase of the new design we compare a number of measurement methods. The resonant coaxial wire method provides very good accuracy for the measurements but relatively poor frequency resolution if only the DUT is used in the coaxial resonator; frequency data points are spaced such that $\Delta f \approx \frac{nc}{2L_{DUT}}$, where $n$ is an integer. $c$ the speed of light, $L_{DUT}$ the length of the device measured. The classical coaxial wire technique gives a frequency range determined only by the frequency points on the network analyser, however any residual mismatch in the characteristic impedance between the measurement network and the DUT will result in reflections in the system which limits the achieveable accuracy. Alternatively it's possible to use time domain gating to gate out reflected signals, however due to the varying characteristic impedance along the length of the DUT it's difficult to gate all reflections without losing sensitivity in the measurements.
 
+A comparison of the time domain measurements of $S_{21}$ and the corresponding beam coupling impedance for each signal is shown in Fig.~\ref{fig:measComp}. The measurements with matching resistors, shown in *colour* show that there is a large reduction in multiple reflections when compared to the non-gated, non-matched signal in *colour*. The gated measurement, shown in *colour* can be seen to screen out many of the reflections also, however when the frequency domain data is processed to give a beam coupling impedance it can be seen that there is a large DC offset, caused by the loss of transmitted energy by the gating of the signal. The non-matched, non-gated signal is exceptionally noisy and provides no useful data, whereas the resistively matched measurements give good results below $\approx$ 500 MHz but the residual mismatch in the system (characteristic impedance of DUT $Z_{c}^{DUT}\approx 270$ was matched used a carbon film resistor of 220 $\Omega$) causes large oscillations which mask the true impedance. 
+
+\begin{figure}
+\subfigure[]{
+
+\label{fig:timeDomMatchingETC}
+}
+\subfigure[]{
+
+\label{fig:freqDomMatchingETC}
+}
+
+\caption{\subref{fig:timeDomMatchingETC} Time domain signal for different methods of eliminating reflected signals in the coaxial wire measurements. \subref{fig:freqDomMatchingETC} shows the resulting beam coupling impedance measurements.}
+\label{fig:measComp}
+\end{figure}
+
 \section{Power Loss}
 
+To determine the temperatures reached during operation of the MKI under various operational conditions of the LHC it is necessary to calculate the power lost by the beam into the MKIs due to beam-wakefield interactions. This is calculated using Eqn.~\ref{eqn:powLoss}
 
+\begin{equation}
+\P_{loss} = 2 e N_{b} n_{bunches} f_{rev} \
+\end{equation}
 
 
 \section{Future Plans}
