@@ -89,10 +89,11 @@ A comparison of the time domain measurements of $S_{21}$ and the corresponding b
 
 \section{Power Loss}
 
-To determine the temperatures reached during operation of the MKI under various operational conditions of the LHC it is necessary to calculate the power lost by the beam into the MKIs due to beam-wakefield interactions. This is calculated using Eqn.~\ref{eqn:powLoss}
+To determine the temperatures reached during operation of the MKI under various operational conditions of the LHC it is necessary to calculate the power lost by the beam into the MKIs due to beam-wakefield interactions. Assuming $M$ equi-spaced, equal populated bunches in a circular machine, this is calculated using Eqn.~\ref{eqn:powLoss}, where $f_{0}$ is the revolution frequnecy, $\omega_{0}=2\pi f_{0}$, $e$ is the charge of an electron, $N_{b}$ is the number of particles per bunch, $\lambda(\omega)$ is the beam current spectrum, and $\Re{}e(Z_{\parallel}(\omega))$ is the real component of the longitudinal beam coupling impedance.
 
 \begin{equation}
-\P_{loss} = 2 e N_{b} n_{bunches} f_{rev} \
+P_{loss} = 2 \left( f_{0} e M  N_{b}\right)^{2} \displaystyle\sum\limits_{n = -\infty}^{\infty}  \left| \lambda \left( p M \omega_{0} \right)  \right|^{2} \Re{}e \left[ Z_{\parallel} \left( p M \omega_{0} \right) \right]
+\label{eqn:powLoss}
 \end{equation}
 
 
@@ -122,8 +123,6 @@ To determine the temperatures reached during operation of the MKI under various 
 % New screen design impedance
 % Various lengths of overlap impedance and predicted resonant frequency
 % 
-
-\section{INTRODUCTION}
 
 
 \begin{thebibliography}{9}
