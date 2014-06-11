@@ -64,7 +64,7 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 \includegraphics[width=1.0\textwidth]{beamScreen.pdf}
 \end{figure}
 \begin{itemize}
-\item{The new screen design [3] for installation in the MKIs during long shutdown 1 (LS1) has been designed to permit the inclusion of 24 screen conductors in the ceramic tube, whilst lowering the surface electric field on the ceramic tube during kicker pulsing to reduce .}
+\item{The new screen design [1], being installed  in the MKIs during long shutdown 1 (LS1), has been designed to permit the inclusion of 24 screen conductors in the ceramic tube, whilst lowering the surface electric field on the ceramic tube during kicker pulsing to reduce the change of surface flashover.}
 \item{The capacitively coupled end is significantly changed:}
 \begin{itemize}
 \item{The external metallization is replaced by an external metal tube which steps away from the ceramic tube near the ends of the screen conductors. This reduces the surface electric field on the ceramic tube significantly. Tapering the length of the conductors also helps this reduction.}
@@ -79,8 +79,8 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 \vfill
 \begin{block}{References}
 \begin{enumerate}
-\item{\small{M.J. Barnes \emph{et al}., \emph{Beam Induced Ferrite Heating of the LHC Injection Kickers and Proposals for Improved Cooling}, IPAC2013, MOPWA031}}
 \item{\small{M.J. Barnes \emph{et al}., \emph{Upgrade of the LHC Injection Kicker Magnets}, IPAC2013, MOPWA030}}
+\item{\small{M.J. Barnes \emph{et al}., \emph{Beam Induced Ferrite Heating of the LHC Injection Kickers and Proposals for Improved Cooling}, IPAC2013, MOPWA031}}
 \item{\small{Hugo Day, PhD Thesis, June 2013}}
 \end{enumerate}
 \end{block}
@@ -103,8 +103,10 @@ The LHC injection kicker magnets experienced significant beam induced heating of
             % fill each column with content
 \begin{block}{Impedance Measurements of New Design}
 \begin{itemize}
+\begin{small}
 \item{The beam coupling impedance for all MKIs with the new beam screen design is measured before bake out and HV conditioning to ensure consistency between magnets and to foresee any possible problems with regards to heating}
-\item{Measurements is typically done using the coaxial resonant method due to it's sensivity to low impedances.}
+\item{Measurements are typically done using the coaxial resonant method due to it's sensivity to low impedances.}
+\end{small}
 \end{itemize}
 \begin{figure}
 \subfigure[]{
@@ -136,22 +138,26 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 \begin{center}
 \begin{tabular}{c | c | c | c | c}
 \small{Screen Design} & \small{Pre-LS1} & \small{Post-LS1} & \small{HL-LHC 50ns} & \small{HL-LHC 25ns} \\ \hline 
-\small{New Design} & 20-35 & 34-52 & 151-240 & 125-191 \\ \hline
+\small{New Design (24 conductors)} & 20-35 & 34-52 & 151-240 & 125-191 \\ \hline
 \small{15 screen conductors} & 68 & 117 & 538 & 432 \\ \hline
 \small{Old MKI8D (twisted)} & 168 & N/A & N/A & N/A \\ \hline
 \small{19 screen conductors} & 52 & 76 & N/A & N/A \\
 \end{tabular}
 \end{center}
 \end{table}
+\begin{itemize}
+\item{The new design with 24 conductors gives a decrease of some 20-50\% for post-LS1 parameters compared to the magnets with 15 screen conductors pre-LS1 - a great success! It is predicted that beam-induced heating should no longer be a problem in the MKIs for nominal LHC parameters in this case.}
+\end{itemize}
 
 \end{block}
 \vfill
 \begin{block}{Future Proposals}
 \begin{itemize}
-\item{Table~\ref{tab:heating-mki-screen-designs} shows that for proposed beam parameters for HL-LHC that the power loss calculated for the MKIs will be as higher under these parameters as the power loss in the MKI8D pre-TS3}
+\begin{small}
+\item{Table~\ref{tab:heating-mki-screen-designs} shows that for the proposed beam parameters for HL-LHC, the power loss calculated for the MKIs will be as high under these parameters as the power loss in the MKI8D pre-TS3}
 \item{Given the high temperatures observed in MKI8D, it is necessary to either reduce the power loss or improve the evacuation of heat from the ferrite yoke}
 \begin{itemize}
-\item{The cooling of the MKIs is dominated by radiative heat transfer between components. Most components are highly polished giving a low thermal emissivity, particularly of the vacuum tank. Studies into how to improve the heat transfer are underway [1].}
+\item{The cooling of the MKIs is dominated by radiative heat transfer to the vacuum tank. However the tank is highly polished giving a low thermal emissivity, particularly of the vacuum tank. Studies into how to improve the heat transfer are underway [2].}
 \end{itemize}
 \item{To reduce the power loss either two paths may be considered:}
 \begin{itemize}
@@ -163,7 +169,8 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 f_{res} = \frac{n c}{2 \sqrt{\epsilon_{r}}\left( L_{overlap} + \delta_{fringe} \right)}
 \end{equation}
 where $n$ is an integer, $c$ the speed of light, $\epsilon_{r}$ is the relative permitivitty of the ceramic tube, $L_{overlap}$ the length of overlap between the screen conductors and the external cylinder and $\delta_{fringe}$ the influence of the fringe fields on the effective length.
-\item{If the overlap can be shortened the resonant frequency will increase, pushing the resonances into a region where the beam current spectrum is smaller in magnitude. Initial simulations with  different lengths of overlap are plotted with profile of 1ns Gaussian bunch below - They show that the resonant frequency increases as the overlap is decreased - as expected. Further studies are underway to better evaluate this possibility}
+\item{If the overlap can be shortened the resonant frequency will increase, pushing the resonances into a region where the beam current spectrum is smaller in magnitude. Initial simulations with  different lengths of overlap are plotted with profile of a 1ns Gaussian bunch below - They show that the resonant frequency increases as the overlap is decreased - as expected. Further studies are underway to better evaluate this possibility}
+\end{small}
 \end{itemize}
 \begin{center}\includegraphics[width=0.8\textwidth]{TUPRI030f6.pdf}
 \end{center}
