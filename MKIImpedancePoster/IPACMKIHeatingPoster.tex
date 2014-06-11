@@ -49,43 +49,38 @@
             % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
             % ---------------------------------------------------------%
             % fill each column with content            
-            \begin{block}{Abstract}
+            \begin{block}{Summary}
 \small{
 The LHC injection kicker magnets experienced significant beam induced heating of the ferrite yoke, with high beam currents circulating for many hours, during operation of the LHC in 2011 and 2012. The causes of this beam coupling impedance were studied in depth and an improved beam screen implemented to reduce the impedance. Results of measurements and simulations of the new beam screen design are presented in this paper: these are used to predict power loss for operation after long shutdown 1 and for proposed HL-LHC operational parameters.
 }
 \end{block}
             \vfill
-
 	\begin{block}{Background}
 \includegraphics[width=1.0\textwidth]{introductionPicture.pdf}
 	\end{block}
  \vfill
-\begin{block}{New Beam Screen Design}
-\small{
+	\begin{block}{Beam Screen}
+\begin{figure}
+\includegraphics[width=1.0\textwidth]{beamScreen.pdf}
+\end{figure}
 \begin{itemize}
-\item{A new screen design has been proposed [3] for installation in the MKIs during long shutdown 1 (LS1) which aims to include 24 screen conductors in the design, whilst lowering the surface electric field on the ceramic tube during kicker pulsing, shown in Fig.~\ref{fig:SideView}.}
-
-
-
-
+\item{The new screen design [3] for installation in the MKIs during long shutdown 1 (LS1) has been designed to permit the inclusion of 24 screen conductors in the ceramic tube, whilst lowering the surface electric field on the ceramic tube during kicker pulsing to reduce .}
 \item{The capacitively coupled end is significantly changed:}
 \begin{itemize}
 \item{The external metallization is replaced by an external metal tube which steps away from the ceramic tube near the ends of the screen conductors. This reduces the surface electric field on the ceramic tube significantly. Tapering the length of the conductors also helps this reduction.}
 \item{This reduction allows 24 screen conductors to be placed back in the beam screen, greatly improving the screening of the ferrite yoke from the beam.}
 \end{itemize}
-\item{In addition the thermal emissivity of the inside of the vacuum tank is planned to be increased to help improve heat evacuation from the tank.}
 \end{itemize}
-}
-\end{block}
+
+	\end{block}
+
             \vfill
 
 \vfill
 \begin{block}{References}
 \begin{enumerate}
-\item{\small{E. Métral \emph{et al}., \emph{Beam-Induced Heating/Bunch Length/RF and Lessons for 2012}, LHC Performance Workshop, Chamonix 2012, CERN-ATS-2012-069}}
 \item{\small{M.J. Barnes \emph{et al}., \emph{Beam Induced Ferrite Heating of the LHC Injection Kickers and Proposals for Improved Cooling}, IPAC2013, MOPWA031}}
 \item{\small{M.J. Barnes \emph{et al}., \emph{Upgrade of the LHC Injection Kicker Magnets}, IPAC2013, MOPWA030}}
-\item{\small{T. Kroyer, F. Caspers, and E. Gaxiola, \emph{Longitudinal and Transverse Wire Measurements for the Evaluation of Impedance Reduction Measures on the MKE Extraction Kickers} CERN, Geneva, CERN-AB-Note-2007-028, Jul 2007}}
 \item{\small{Hugo Day, PhD Thesis, June 2013}}
 \end{enumerate}
 \end{block}
@@ -109,11 +104,17 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 \begin{block}{Impedance Measurements of New Design}
 \begin{itemize}
 \item{The beam coupling impedance for all MKIs with the new beam screen design is measured before bake out and HV conditioning to ensure consistency between magnets and to foresee any possible problems with regards to heating}
-\item{Measurements is typically done using the coaxial resonant method due to it's sensivity to low impedances. Additional measurements with the classical coaxial method are done as time allows}
+\item{Measurements is typically done using the coaxial resonant method due to it's sensivity to low impedances.}
 \end{itemize}
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/compTransmissionResSimulations.pdf}
-\caption{\small{Impedance measurements of one MKI using the resonant coaxial wire method and the classical coaxial method, with comparisons to impedance simulations of the new design.}}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{TUPRI030f4.pdf}
+\label{fig:allMKIsNew}
+}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth]{TUPRI030f3.pdf}
+\label{fig:MKIsCondsNumber}
+}\caption{\small{Impedance measurements of \subref{fig:allMKIsNew} all MKIs with the new design using the resonant coaxial wire method and  \subref{fig:MKIsCondsNumber} MKIs with 15, 19 and 24 screen conductors, and the MKI8D pre TS3 (experienced high temperatures)}}
 \end{figure}
 \begin{table}
 \label{tab:beamPar}
@@ -135,7 +136,7 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 \begin{center}
 \begin{tabular}{c | c | c | c | c}
 \small{Screen Design} & \small{Pre-LS1} & \small{Post-LS1} & \small{HL-LHC 50ns} & \small{HL-LHC 25ns} \\ \hline 
-\small{New Design} & 21-35 & 34-52 & 151-240 & 125-191 \\ \hline
+\small{New Design} & 20-35 & 34-52 & 151-240 & 125-191 \\ \hline
 \small{15 screen conductors} & 68 & 117 & 538 & 432 \\ \hline
 \small{Old MKI8D (twisted)} & 168 & N/A & N/A & N/A \\ \hline
 \small{19 screen conductors} & 52 & 76 & N/A & N/A \\
@@ -145,72 +146,30 @@ The LHC injection kicker magnets experienced significant beam induced heating of
 
 \end{block}
 \vfill
-\begin{block}{Resonant Coaxial Impedance Measurements}
+\begin{block}{Future Proposals}
 \begin{itemize}
-\item{The resonant coaxial impedance measurement method turns the device under test (DUT) in a coaxial resonator by running a coaxial line through the device and weakly capacitively coupling the device to the VNA circuit.}
-\item{Measurement of the Q factor of this resonance very accurate measurement of the losses of the system can be made and the impedance measured.} 
-\item{Drawbacks are that resonant frequencies are dependant on the length of the DUT meaning frequency resolution can be poor for short devices.}
+\item{Table~\ref{tab:heating-mki-screen-designs} shows that for proposed beam parameters for HL-LHC that the power loss calculated for the MKIs will be as higher under these parameters as the power loss in the MKI8D pre-TS3}
+\item{Given the high temperatures observed in MKI8D, it is necessary to either reduce the power loss or improve the evacuation of heat from the ferrite yoke}
+\begin{itemize}
+\item{The cooling of the MKIs is dominated by radiative heat transfer between components. Most components are highly polished giving a low thermal emissivity, particularly of the vacuum tank. Studies into how to improve the heat transfer are underway [1].}
 \end{itemize}
+\item{To reduce the power loss either two paths may be considered:}
+\begin{itemize}
+\item{A different type of beam screen}
+\item{Modify the existing design to reduce the interaction with the beam current}
+\end{itemize}
+\item{Previous work [3] has shown that the resonant frequency of the beam impedance is determined by the length of the overlap between the screen conductors and the external metal cylinder, given by }
 \begin{equation}
-f_{0} = \frac{nc}{2L}
+f_{res} = \frac{n c}{2 \sqrt{\epsilon_{r}}\left( L_{overlap} + \delta_{fringe} \right)}
 \end{equation}
-\begin{figure}
-\includegraphics[width=0.25\textwidth]{figures/wire_meas_single_wire.pdf}
-\caption{Schema of the measurement setup for the coaxial resonant wire method.}
-\label{fig:measResonantMethod}
-\end{figure}
-\begin{itemize}
-\item{Length can be increased by artificially lengthening the structure - the use of low loss coaxial cables being a solution (their losses are well characterised and the length known). Other solutions may be possible also (inductances or capacitances to increase the electrical length) however these would make measurements of the imaginary impedance of the device complicated.}
-\item{More details of the analysis technique can be found in [4] and [5]}
+where $n$ is an integer, $c$ the speed of light, $\epsilon_{r}$ is the relative permitivitty of the ceramic tube, $L_{overlap}$ the length of overlap between the screen conductors and the external cylinder and $\delta_{fringe}$ the influence of the fringe fields on the effective length.
+\item{If the overlap can be shortened the resonant frequency will increase, pushing the resonances into a region where the beam current spectrum is smaller in magnitude. Initial simulations with  different lengths of overlap are plotted with profile of 1ns Gaussian bunch below - They show that the resonant frequency increases as the overlap is decreased - as expected. Further studies are underway to better evaluate this possibility}
 \end{itemize}
-\begin{figure}
-\subfigure[]{
-\includegraphics[width=0.4\textwidth]{figures/resMethodPlotsS21.pdf}
-\label{fig:s21Res}
-}
-\subfigure[]{
-\includegraphics[width=0.45\textwidth]{figures/resMethodPlotsImp.pdf}
-\label{fig:resImp}
-}
-\caption{\subref{fig:s21Res} $S_{21}$ and \subref{fig:resImp} impedance measurements of a number of configurations for measurement setups for an MKI with the new screen design.}
-\end{figure}
+\begin{center}\includegraphics[width=0.8\textwidth]{TUPRI030f6.pdf}
+\end{center}
 \end{block}
 
-%
-%\begin{block}{Beam Coupling Impedance of the New Screen Design}
-%\small{
-%\begin{itemize}
-%\item{8 magnets with the new screen design have been produced to date, all measured using the resonant coaxial wire method}
-%\item{The longitudinal impedance is simulated for 3 cases; the beam screen before TS3 for all MKIs, the screen for the revised MKI8D installed during TS3, and the proposed screen design for post LS1. The real components of all are shown in Fig.~\ref{fig:MKIScreenImp}}
-%
-%\end{itemize}
-%
-%\begin{figure}
-%\subfigure[]{
-%\includegraphics[width=0.4\textwidth]{realImp.pdf}
-%\label{fig:MKIScreenImp}
-%}
-%\subfigure[]{
-%\includegraphics[width=0.4\textwidth]{mki-overlap-len-real-imp-zoom.pdf}
-%\label{fig:mkiOverlapRes}
-%}
-%\caption{\subref{fig:MKIScreenImp} The real component of the longitudinal beam coupling impedance of the existing MKIs, the replacement MKI8D and the proposed beam screen design for after LS1. \subref{fig:mkiOverlapRes} The resonant frequency due to different lengths of the overlap of the screen conductors with external metallization from simulations and calculated from \ref{eqn:imp-overlap-fres}, are shown as blue vertical lines.}
-%\end{figure}
-%
-%\begin{itemize}
-%\item{For the well screened magnet (the ferrite yoke is not visible to the circulating beam), the impedance is dominated by a resonance due to the overlapping area between the screen conductors and the external metallization/metal tube. The resonant frequency $f_{res}$ is given by}
-%
-%\begin{equation}
-%\small{f_{res} = \frac{nc}{\sqrt{\epsilon_{r}}2 \left( L_{overlap} + \delta_{fringe} \right)},}
-%\label{eqn:imp-overlap-fres}
-%\end{equation}
-%
-%\item{where $\epsilon_{r}$ is the relative permittivity of the surrounding medium (in this case $\epsilon_{r} \approx 10$ for the alumina ceramic tube), $c$ is the speed of light, $L_{overlap}$ is the length of the overlap, and $\delta_{fringe}$ is a factor to take into account fringe fields, which depends on the distance between the screen conductors and the external metallization/metal tube.}
-%\item{Examples of the predicted impedance for different lengths of overlap between 80 mm and 120 mm are shown in Fig.~\ref{fig:mkiOverlapRes} compared to simulated impedance. These show very good agreement between the two.}
-%\end{itemize}
-%
-%
-%}
+
 
 \vfill
 
